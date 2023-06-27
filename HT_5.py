@@ -81,11 +81,11 @@ def find_client(cur):
     
 conn = psycopg2.connect(database='SQL_5', user='appadmin', password='jdfh8jhtghnjkfrvhyu')
 with conn.cursor() as cur:
-    # create_tables(cur)
-    # fill_client_data(cur)
-    # enter_client_number(cur)
+    create_tables(cur)
+    fill_client_data(cur)
+    enter_client_number(cur)
     change_client_data(cur)
-    # delete_phone_number(cur)
-    # delete_client(cur)
-    # find_client(cur)
+    delete_phone_number(cur)
+    delete_client(cur)
+    find_client(cur)
 conn.close()
